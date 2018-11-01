@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harish</title>
+</head>
+<body>
+<h1>This is my page</h1>
+<div>
+  <form action= "{{ url_for('details') }}" method="POST">
+      Building/Door No:
+      <input type="text" name="doorno">
+      <br>
+      Locality:
+      <input type="text" name="locality">
+      <br>
+       SQFT:
+      <input type="text" name="sqft">
+      <br>
+      District:
+      <input type="text" name="district">
+      <br>
+      City:
+      <input type="text" name="city">
+      <br>
+      State:
+      <input type="text" name="state">
+      <br>
+      Address:
+      <input type="text" name="address">
+      <br>
+      Pin Code:
+      <input type="text" name="pincode">
+      <br>
+      Phone:
+      <input type="text" name="phone">
+      <br>
+      Email:
+      <input type="text" name="email">
+      <br>
+      <input type="submit" name="submit">
+      <br>
+</form>
+</div>
+</body>
+</html>
