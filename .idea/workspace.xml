@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4203a38a-ebac-4b7c-bfc3-4e5d136d2a19" name="Default Changelist" comment="" />
+    <list default="true" id="4203a38a-ebac-4b7c-bfc3-4e5d136d2a19" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +41,14 @@
         <counts>
           <entry key="html" value="1149" />
           <entry key="php" value="2" />
-          <entry key="py" value="1722" />
+          <entry key="py" value="2103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1149" />
           <entry key="PHP" value="2" />
-          <entry key="Python" value="1722" />
+          <entry key="Python" value="2103" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -57,11 +59,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="367">
+              <caret line="137" column="37" lean-forward="true" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1541095640000" expanded="true" signature="1666:1667" ph="..." />
+                <marker date="1541099280000" expanded="true" signature="1340:2412" ph="..." />
+                <marker date="1541099280000" expanded="true" signature="2837:2838" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/mymap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="370">
               <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
@@ -95,6 +98,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -114,6 +120,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -352,18 +359,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/mymap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="370">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="367">
+          <caret line="137" column="37" lean-forward="true" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1541095640000" expanded="true" signature="1666:1667" ph="..." />
+            <marker date="1541099280000" expanded="true" signature="1340:2412" ph="..." />
+            <marker date="1541099280000" expanded="true" signature="2837:2838" ph="..." />
           </folding>
         </state>
       </provider>

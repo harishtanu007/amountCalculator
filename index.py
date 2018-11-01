@@ -5,9 +5,12 @@ import mysql.connector
 import subprocess
 import os
 
+
 # if the script don't need output.
 import requests
+from types import SimpleNamespace as Namespace
 
+from collections import namedtuple
 
 
 mydb = mysql.connector.connect(
@@ -48,7 +51,37 @@ def createCustomerTable():
         "CREATE TABLE customer (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255),email VARCHAR(255) UNIQUE,doorno VARCHAR(255),locality VARCHAR(255),city VARCHAR(255),district VARCHAR(255),state VARCHAR(255),pincode VARCHAR(255),mobile VARCHAR(255) UNIQUE)")
     print("table created successfully")
 
+def customcall():
+    url = "http://apis.mapmyindia.com/advancedmaps/v1/9tn2n9znekwy67wf89m8sxt7bb5zkors/rev_geocode?lat=17.51&lng=78.35"
 
+    response = requests.get(url)
+    # print()
+    print(response.status_code)
+    #print(response.street)
+    x = response.json()
+    print(type(x))
+    print(x)
+    print(x["results"])
+    y=x["results"]
+    #print(y["poi"])
+    #print(x['result'])
+    # jsonObjectInfo = json.loads(response.rea)
+    # print(type(jsonObjectInfo))
+    for eachJsonObject in x['results']:
+        print("poi is is {0}".format(eachJsonObject['poi']))
+        print("street is {0}".format(eachJsonObject['street']))
+        # print("Street Name is {0}".format(eachJsonObject['Street']))
+        # print("City Name is {0}".format(eachJsonObject['City']))
+        # print("Country Name is {0}".format(eachJsonObject['Country']))
+        print("-----------------**************---------------")
+    # json_data = json.loads(response.text)
+    # print(json_data)
+    # x = json.loads(response.text)
+    # result=x["results"]
+    # print(x["results"].keys())
+
+
+customcall()
 #printTable("landrate")
 #os.system("php location.php")
 
@@ -85,19 +118,31 @@ def client():
 def view_do_something():
 
     if request.method == 'POST':
-        #your database process here
-       # print(request.get_json())
-        #print("lat="+request.args.get("lat"))
-        #print("lng="+request.args.get("lng"))
         url = "http://apis.mapmyindia.com/advancedmaps/v1/9tn2n9znekwy67wf89m8sxt7bb5zkors/rev_geocode?lat=17.51&lng=78.35"
 
         response = requests.get(url)
-       # print()
-        json_data = json.loads(response.text)
-        print(json_data)
-        # da= json.loads(response)
-        #print(data["results"]["locality"])
-        return "OK"
+        # print()
+        print(response.status_code)
+        # print(response.street)
+        x = response.json()
+        print(type(x))
+        print(x)
+        print(x["results"])
+        y = x["results"]
+
+        # print(y["poi"])
+        # print(x['result'])
+        # jsonObjectInfo = json.loads(response.rea)
+        # print(type(jsonObjectInfo))
+        for eachJsonObject in x['results']:
+            poi=eachJsonObject['poi']
+            print("poi is is {0}".format(eachJsonObject['poi']))
+            print("street is {0}".format(eachJsonObject['street']))
+            # print("Street Name is {0}".format(eachJsonObject['Street']))
+            # print("City Name is {0}".format(eachJsonObject['City']))
+            # print("Country Name is {0}".format(eachJsonObject['Country']))
+            print("-----------------**************---------------")
+        return poi
     else:
         return "NO OK"
 
